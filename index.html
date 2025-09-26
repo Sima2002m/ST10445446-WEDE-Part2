@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simmy Investment, Trading & Co. - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="enquiry.html">Enquiry</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Simmy Investment, Trading & Co.</h1>
+    <p>The future with trading</p>
+    <p>Empowering traders with clear strategies, disciplined risk management, and reliable market insights.</p>
+  </section>
+
+  <section class="market-updates">
+    <div class="card"><div id="tv_eurusd"></div></div>
+    <div class="card"><div id="tv_gbpusd"></div></div>
+    <div class="card"><div id="tv_usdjpy"></div></div>
+  </section>
+
+  <script src="https://s3.tradingview.com/tv.js"></script>
+  <script>
+    function createSmallChart(containerId, symbol) {
+      new TradingView.widget({
+        autosize: true,
+        symbol: symbol,
+        interval: "60",
+        timezone: "Etc/UTC",
+        theme: "dark",
+        style: "1",
+        locale: "en",
+        hide_side_toolbar: true,
+        allow_symbol_change: false,
+        details: false,
+        hotlist: false,
+        calendar: false,
+        container_id: containerId
+      });
+    }
+
+    if (window.TradingView) {
+      createSmallChart("tv_eurusd", "FX:EURUSD");
+      createSmallChart("tv_gbpusd", "FX:GBPUSD");
+      createSmallChart("tv_usdjpy", "FX:USDJPY");
+    }
+  </script>
+
+  <section class="articles">
+    <h2>Trading Tips & Educational Articles</h2>
+    <article>
+      <h3>Build a Pre-Trade Checklist</h3>
+      <p>Checklists reduce impulsive errors and help you follow your plan consistently.</p>
+    </article>
+    <article>
+      <h3>Risk Management Basics</h3>
+      <p>Always risk a fixed % per trade and stick to your plan. Protect your capital first!</p>
+    </article>
+    <article>
+      <h3>📌 Recommended Educational Resources</h3>
+      <ul>
+        <li><a href="https://www.babypips.com" target="_blank">BabyPips School of Pipsology</a></li>
+        <li><a href="https://www.investopedia.com/forex-4427785" target="_blank">Investopedia Forex Section</a></li>
+        <li><a href="https://www.tradingview.com/ideas/forex/" target="_blank">TradingView Ideas</a></li>
+      </ul>
+    </article>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Simmy Investment, Trading & Co. | Educational content only, not financial advice.</p>
+    <img src="simmy-the-forex-champion-logo.png" alt="Simmy Forex Logo" class="logo">
+  </footer>
+</body>
+</html>

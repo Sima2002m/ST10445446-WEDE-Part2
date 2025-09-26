@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry - Simmy Investment, Trading & Co.</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="enquiry.html" class="active">Enquiry</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Enquiry Form</h1>
+    <p>Have a question? Fill in the form below.</p>
+  </section>
+
+  <main class="form-container">
+    <form class="enquiry-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+      <label for="topic">Topic</label>
+      <select id="topic" name="topic" required>
+        <option value="">-- Select a topic --</option>
+        <option>Forex Training</option>
+        <option>Consultancy</option>
+        <option>Market Analysis</option>
+        <option>Other</option>
+      </select>
+      <label for="message">Your Enquiry</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+      <button type="submit">Submit Enquiry</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Simmy Investment, Trading & Co. | Educational content only, not financial advice.</p>
+    <img src="simmy-the-forex-champion-logo.png" alt="Simmy Forex Logo" class="logo">
+  </footer>
+</body>
+</html>
