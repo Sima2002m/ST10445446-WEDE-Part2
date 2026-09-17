@@ -56,6 +56,5 @@ It includes: Home, About, Services, Enquiry, and Contact pages with consistent s
 
  📝 Notes
 - The website is for **educational purposes only** and not financial advice.
-- jkbhjbhhnbhbj, kj kj j hnb kjb jnb njb h j kjjb khbkubj
 - TradingView charts require internet access to load.
 
